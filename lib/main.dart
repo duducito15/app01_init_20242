@@ -8,25 +8,20 @@ void main(List<String> args) {
         body: SafeArea(
           child: Row(
             children: [
-              Container(
-                height: 100,
-                width: 150,
-                color: Colors.green,
+              Icon(
+                Icons.wifi,
+                size: 30.0,
+                color: Colors.white,
               ),
-              Container(
-                height: 100,
-                width: 150,
-                color: Colors.blue,
+              Icon(
+                Icons.star,
+                size: 30.0,
+                color: Colors.blueAccent,
               ),
-              Container(
-                height: 100,
-                width: 150,
-                color: Colors.red,
-              ),
-              Container(
-                height: 100,
-                width: 150,
-                color: Colors.purple,
+              Icon(
+                Icons.alarm,
+                size: 30.0,
+                color: Colors.deepPurpleAccent,
               ),
             ],
           ),
