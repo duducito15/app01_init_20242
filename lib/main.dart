@@ -6,14 +6,31 @@ void main(List<String> args) {
       home: Scaffold(
         backgroundColor: Color(0xFFffc300), //Colors.deepPurple,
         body: SafeArea(
-          child: Container(
-            color: Colors.blue,
-            child: Text("Hola!!!"),
-            height: 200.0,
-            width: 200.0,
-            margin: EdgeInsets.symmetric(horizontal: 15.0, vertical: 50.0),
-            padding: EdgeInsets.all(15.0),
-            alignment: Alignment.center,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.green,
+              ),
+              Container(
+                height: 100,
+                width: 200,
+                color: Colors.blue,
+              ),
+              Container(
+                height: 100,
+                width: 300,
+                color: Colors.red,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.purple,
+              ),
+            ],
           ),
         ),
       ),
