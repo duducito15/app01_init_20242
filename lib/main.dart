@@ -7,21 +7,15 @@ void main(List<String> args) {
         backgroundColor: const Color(0xFFffc300), //Colors.deepPurple,
         body: SafeArea(
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(
-                Icons.wifi,
-                size: 30.0,
-                color: Colors.white,
-              ),
-              Icon(
-                Icons.star,
-                size: 30.0,
-                color: Colors.blueAccent,
-              ),
-              Icon(
-                Icons.alarm,
-                size: 30.0,
-                color: Colors.deepPurpleAccent,
+              Container(
+                width: 300,
+                height: 300,
+                child: Image.network(
+                  "https://images.pexels.com/photos/29624729/pexels-photo-29624729.jpeg",
+                  fit: BoxFit.fill,
+                ),
               ),
             ],
           ),
