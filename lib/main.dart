@@ -24,13 +24,13 @@ void main(List<String> args) {
               ElevatedButton(
                 onPressed: () {
                   int numero = 100;
-                  print("Hola a todos!!! $numero");
+                  print("ElevatedButton $numero");
                 },
-                child: const Text("Click!!!"),
+                child: const Text("ElevatedButton"),
               ),
               ElevatedButton.icon(
                 onPressed: () {},
-                label: Text("Otro ElevatedButton"),
+                label: Text("ElevatedButton Icon"),
                 icon: Icon(
                   Icons.access_alarm_rounded,
                 ),
@@ -45,12 +45,23 @@ void main(List<String> args) {
               ),
               FilledButton(
                 onPressed: () {},
-                child: Text("Otro Click!!!"),
+                child: Text("FilledButton"),
               ),
               FilledButton.icon(
                 onPressed: () {},
-                label: Text("Otro FilledButton"),
+                label: Text("FilledButton Icon"),
                 icon: Icon(Icons.accessibility_new),
+              ),
+              const SizedBox(
+                height: 20.0,
+              ),
+              OutlinedButton(
+                onPressed: () {},
+                child: Text("Outline Button"),
+              ),
+              TextButton(
+                onPressed: () {},
+                child: Text("Text Button"),
               ),
             ],
           ),
