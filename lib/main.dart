@@ -5,9 +5,14 @@ void main(List<String> args) {
     MaterialApp(
       home: Scaffold(
         backgroundColor: const Color(0xFFffc300), //Colors.deepPurple,
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          child: Icon(Icons.arrow_back),
+        ),
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
                 width: 200,
@@ -35,13 +40,8 @@ void main(List<String> args) {
                   Icons.access_alarm_rounded,
                 ),
               ),
-              FloatingActionButton(
-                onPressed: () {
-                  print("Click, desde el Floating Action Button");
-                },
-                child: const Icon(
-                  Icons.plus_one,
-                ),
+              const SizedBox(
+                height: 20.0,
               ),
               FilledButton(
                 onPressed: () {},
@@ -63,6 +63,9 @@ void main(List<String> args) {
                 onPressed: () {},
                 label: Text("OutlineButton Icon"),
                 icon: Icon(Icons.account_box_outlined),
+              ),
+              const SizedBox(
+                height: 20.0,
               ),
               TextButton(
                 onPressed: () {},
